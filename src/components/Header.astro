@@ -1,0 +1,61 @@
+<header>
+    <a href="/">
+        <img
+            src="/icons/home.png"
+            width={35}
+            height={35}
+            alt="Home"
+        />
+    </a>
+    <!-- <a href="/">Home</a> -->
+    <a href="/projects">Projects</a>
+    <a href="/resume">Resume</a>
+    <a href="/contact">Contact</a>
+    <img id="screenMode"
+        src="/icons/moon.png"
+        width={35}
+        height={35}
+        alt="Dark Mode" 
+    />
+</header>
+<style>
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        float: left;
+        width: 100%;
+        background-color: var(--background);
+        border-radius: 10px;
+        filter: brightness(75%);
+        transition-duration: .5s;
+    }
+    header:hover {
+        filter: brightness(100%);
+        transition-duration: 1s;
+    }
+    a {
+        border: 3px solid var(--shadow);
+        border-radius: 5px;
+        padding: 4px;
+        margin: 5px;
+        background-color: var(--light);
+        color: var(--background);
+        font-weight: bold;
+        font-size: large;
+    }
+
+    #screenMode {
+        border: 3px solid var(--shadow);
+        border-radius: 5px;
+        padding: 4px;
+        margin: 5px;
+        background-color: var(--light);
+        color: var(--background);
+        font-weight: bold;
+        font-size: large;
+        cursor:pointer
+    }
+</style>

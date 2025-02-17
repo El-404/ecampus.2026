@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+
+<Layout title="El Campus">
+    <div id="container">
+        <div class="item">
+            <img src="/icons/phone.png" width={35} height={35} alt="Phone: "> <img/> <p>715-307-3538</p>
+        </div>
+
+        <div class="item">
+            <img src="/icons/mail.png" width={35} height={35} alt="Email: "> <img/>  <p>ecampus2026@gmail.com</p>
+        </div>
+
+        <div class="item">
+            <a href="https://www.linkedin.com/in/ethan-campus-7393752b6/"><img src="/icons/linkedin.png" width={35} height={35} alt="Linkedin: "><img/> <p>Ethan Campus</a></p>
+        </div>
+
+        <div class="item">
+            <a href="https://github.com/El-404"><img src="/icons/github.png" width={35} height={35} alt="Github: "/> <p>El-404</a></p>
+        </div>
+    </div>
+</Layout>
+
+<style>
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 75px;
+    width: 100%;
+    height: 100%;
+}
+img {
+    margin-right: 2px;
+    filter: invert() sepia(1) hue-rotate(180deg) saturate(2); /* Adjust for desired tint */
+    opacity: 0.6; /* Adjust for transparency effect */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+</style>
