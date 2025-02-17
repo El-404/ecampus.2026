@@ -1,9 +1,9 @@
 ---
 const mode = Document.getElementById("screenMode");
-mode.onClick = function() {
+mode.addEventListener("click", function() {
     document.style.setProperty("--background", "white");
 console.log("A");
-};
+});
 ---
 
 <header>
